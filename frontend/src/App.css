@@ -1,0 +1,270 @@
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Gradient background */
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Attractive gradient */
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    z-index: 1000;
+  }
+
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #ffdd57; /* Eye-catching yellow hover */
+  }
+
+  /* Search Section */
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 9rem;
+    margin-right: 12rem;
+  }
+
+  .search h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-align: right;
+    color: #0072ff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .search input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .search input:focus {
+    border-color: #0072ff;
+    box-shadow: 0 4px 8px rgba(0, 114, 255, 0.2); /* Focused input box shadow */
+  }
+
+  /* Job Listings */
+  .job-listings {
+    margin: 4rem 15%;
+    padding: 2rem;
+  }
+
+  .job-listings h2 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #0072ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .job-listings ul {
+    list-style: none;
+  }
+
+  .job-listings li {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .job-listings li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Dynamic shadow on hover */
+  }
+
+  .job-listings h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  .job-listings p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #666;
+  }
+
+  .job-listings a {
+    background-color: #0072ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .job-listings a:hover {
+    background-color: #0056d2;
+    transform: scale(1.05); /* Subtle grow effect */
+  }
+
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  footer p {
+    margin-bottom: 0;
+  }
+
+  /* App Container */
+  .App {
+    min-height: 100vh;
+    padding-top: 90px;
+  }
+
+  /* Job Container */
+  .job-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .job-container h3 {
+    font-size: 24px;
+    color: #0072ff;
+    margin-bottom: 12px;
+  }
+
+  .job-container p {
+    color: #666;
+  }
+
+  .job-container .new-job {
+    background-color: #e3f2fd; /* Soft blue for new jobs */
+  }
+
+  /* No Job Section */
+  .No_job {
+    color: #ff3300;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .No_job_avilable {
+    color: #ff3300;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Apply Button */
+  .apply_button {
+    background: linear-gradient(135deg, #28a745, #218838); /* Attractive green gradient */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .apply_button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); /* Grow effect on hover */
+  }
+
+  /* Search Button */
+  .search_button {
+    width: 250px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .search_button:focus {
+    border-color: #0072ff;
+    box-shadow: 0 6px 12px rgba(0, 114, 255, 0.2);
+  }
+
+  .company {
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    z-index: 1000;
+  }
